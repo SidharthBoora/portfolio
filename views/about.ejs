@@ -1,0 +1,24 @@
+<section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title">About Me</h2>
+    <div class="about-content">
+      <div class="column left">
+        <img src="/image/vsk.jpg" alt="Image">
+      </div>
+      <div class="column right">
+        <div class="text">I'm Sidarth and I'm <span>Web Developer</span></div>
+        <p>I am pursing my btech from Lovely Professinal university (punjab).I joy to making real time
+            projects.I strongly belief in learning
+             practical way.I am good in tecnical knowledge
+              as well as managment field .
+            My objectives are increasing my knowledge in computer science fields and new technologies especially, web development and web Design field. Always looking forward to learn new technologies and be a part of a huge change in the world</p>
+              <% user.forEach((row)=>{ %>
+                <form action="/download/<%= row._id %>" method="GET">  
+                  <input type="submit" value="Download CV">  
+                </form> 
+             
+             <% }) %>
+      </div>
+    </div>
+  </div>
+</section>
